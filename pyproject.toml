@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lingua-ambiguity"
+version = "0.1.0"
+description = "Detect and annotate linguistic ambiguity in English text"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+dependencies = [
+    "spacy>=3.5",
+    "nltk>=3.8",
+    "typer>=0.9",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+viz = ["streamlit>=1.25"]
+dev = ["pytest>=7.0", "black>=23.0"]
+
+[project.scripts]
+lingua-ambiguity = "lingua_ambiguity.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
