@@ -1,5 +1,7 @@
 # lingua-ambiguity
 
+[![No AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/nuxy/no-ai-badge)
+
 A small toolkit that helps you find and label ambiguous bits in English sentences.  
 Built for linguists, NLP tinkerers, and anyone who enjoys the quirks of language.
 
